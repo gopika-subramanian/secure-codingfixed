@@ -1,0 +1,24 @@
+version: '3.7'
+services: 
+    mysql:
+        platform: linux/x86_64
+        image: mysql:5.6
+        restart: always
+        volumes: 
+            - ./dailyshop.sql:/docker-entrypoint-initdb.d/dailyshop.sql
+            - ./db-volume:/var/lib/mysql
+            - ./mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+        environment: 
+            - MYSQL_DATABASE=dailyShop
+            - MYSQL_ROOT_PASSWORD=root
+    web:
+        build: .
+        depends_on:
+            - mysql
+        ports: 
+            - '31007:80'
+        volumes: 
+            - ./source:/var/www/html
+            - ./logs:/var/log/apache2
+        stdin_open: true
+        

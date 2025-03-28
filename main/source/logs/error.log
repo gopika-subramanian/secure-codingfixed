@@ -1,0 +1,5 @@
+[Sun Sep 10 16:55:16.178859 2023] [mpm_prefork:notice] [pid 24] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sun Sep 10 16:55:16.180286 2023] [core:notice] [pid 24] AH00094: Command line: '/usr/sbin/apache2'
+[Sun Sep 10 16:57:22.532144 2023] [php7:warn] [pid 27] [client 192.168.48.1:56660] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /var/www/html/includes/db.php on line 9
+[Sun Sep 10 16:58:03.101821 2023] [php7:warn] [pid 29] [client 192.168.48.1:56672] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /var/www/html/includes/db.php on line 9
+[Sun Sep 10 16:58:04.016824 2023] [php7:warn] [pid 29] [client 192.168.48.1:56672] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /var/www/html/includes/db.php on line 9

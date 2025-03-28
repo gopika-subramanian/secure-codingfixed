@@ -1,0 +1,4 @@
+[Sat Sep 16 09:39:46.254929 2023] [core:warn] [pid 25] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Sep 16 09:39:46.265124 2023] [mpm_prefork:notice] [pid 25] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Sep 16 09:39:46.266615 2023] [core:notice] [pid 25] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 16 09:40:00.719293 2023] [php7:warn] [pid 30] [client 192.168.48.1:65368] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /var/www/html/includes/db.php on line 9

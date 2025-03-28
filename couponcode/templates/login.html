@@ -1,0 +1,23 @@
+<!DOCTYPE >
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<h1>Enter to see coupons available</h1>
+	<form action="/profile" method="POST">
+		<input type="text" name="Uname" required=>Coupon code<br>
+		
+		<input type="Submit" name="subm">
+
+
+	</form>
+
+	<br>
+
+
+	<h3> {{name}}</h3>
+
+</body>
+</html>
